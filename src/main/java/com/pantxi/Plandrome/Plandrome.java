@@ -5,6 +5,7 @@ public class Plandrome {
 
     public static String IsPlandrome(String chaine) {
         String res = "true";
+        chaine = chaine.toLowerCase();
          int  var = chaine.length() ;
         if (chaine.length() <= 1) {
             res = "true";
@@ -13,20 +14,19 @@ public class Plandrome {
             int right = chaine.length() - 1;
 
             while (left < right) {
-                if(chaine.charAt(left)==chaine.charAt(right)) {
+                if(chaine.charAt(left)!=chaine.charAt(right)) {
 
-                    res = "true" ;
+                    res = "false" ;
                 }
                left++ ;
                 right -- ;
             }
 
-        }
-
-        else{
-            res = "false";
 
         }
+
+
+
 
         return res;
     }

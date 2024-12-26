@@ -23,4 +23,8 @@ public class TestPlandrome {
     public void TestPlandrome4(){
         assertEquals("true",Plandrome.IsPlandrome("radar"));
     }
+    @Test
+    public void TestPlandrome5(){
+        assertEquals("true",Plandrome.IsPlandrome("Radar"));
+    }
 }
