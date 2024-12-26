@@ -6,9 +6,17 @@ import java.util.* ;
 
 public class TestPlandrome {
     @Test
-    public void TestPlindrome1(){
+    public void TestPlandrome1(){
 
         assertEquals("true",Plandrome.IsPlandrome("")) ;
     }
+  @Test
+    public void TestPlandrome2(){
+        assertEquals("true",Plandrome.IsPlandrome("A"));
+  }
 
+    @Test
+    public void TestPlandrome3(){
+        assertEquals("false",Plandrome.IsPlandrome("hello"));
+    }
 }
